@@ -1,7 +1,8 @@
-local map = vim.keymap.set
+local harpoon = require("harpoon")
+local map = vim.keymap.set 
 
 map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
-map("i", "<C-e>", "<End>", { desc = "move end of line" })
+-- map("i", "<C-e>", "<End>", { desc = "move end of line" })
 map("i", "<C-h>", "<Left>", { desc = "move left" })
 map("i", "<C-l>", "<Right>", { desc = "move right" })
 map("i", "<C-j>", "<Down>", { desc = "move down" })
@@ -85,3 +86,29 @@ map("i", "<C-c>", "<Esc>")
 map("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+
+-- harpoon
+map("n", "<leader>a", function()
+  harpoon:list():add()
+end, { desc = "Harpoon Add File" })
+
+map("n", "<C-e>", function()
+  harpoon.ui:toggle_quick_menu(harpoon:list())
+end, { desc = "Harpoon Menu" })
+
+map("n", "<leader>3", function()
+  harpoon:list():select(1)
+end, { desc = "Go to file 1" })
+
+map("n", "<leader>4", function()
+  harpoon:list():select(2)
+end, { desc = "Go to file 2" })
+
+map("n", "<leader>8", function()
+  harpoon:list():select(3)
+end, { desc = "Go to file 3" })
+
+map("n", "<leader>9", function()
+  harpoon:list():select(4)
+end, { desc = "Go to file 4" })
