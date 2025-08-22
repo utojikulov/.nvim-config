@@ -35,7 +35,7 @@ o.mouse = "a"
 
 -- Numbers
 o.number = true
-o.numberwidth = 2
+o.numberwidth = 6
 o.rnu = true
 o.scrolloff = 15
 

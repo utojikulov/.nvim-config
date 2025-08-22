@@ -10,7 +10,9 @@ return {
   {
     "vyfor/cord.nvim",
     build = ":Cord update",
-    -- opts = {}
+    config = function()
+      require "configs.cord"
+    end,
   },
   {
     "nvim-lua/plenary.nvim",
