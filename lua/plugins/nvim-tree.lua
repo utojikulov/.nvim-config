@@ -3,8 +3,19 @@ return {
         "nvim-tree/nvim-tree.lua",
         opts = {
             view = {
-                width = 50,
-                side = "right",
+                float = {
+                    enable = true,
+                    quit_on_focus_loss = true,
+                    open_win_config = {
+                        relative = "editor",
+                        border = "rounded",
+                        width = 50,
+                        height = 40,
+                        row = 5,
+                        col = 120,
+                    }
+                },
+                width = 50
             },
             renderer = {
                 highlight_git = true,
