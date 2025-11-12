@@ -2,7 +2,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "obsidian-ember",
+  theme = "github_dark",
   transparency = true,
   telescope = { style = "borderless" },
 --   statusline = {
