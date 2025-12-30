@@ -37,7 +37,7 @@ o.mouse = "a"
 o.number = true
 o.numberwidth = 6
 o.rnu = true
-o.scrolloff = 15
+o.scrolloff = 12
 
 -- disable nvim intro
 opt.shortmess:append "sI"

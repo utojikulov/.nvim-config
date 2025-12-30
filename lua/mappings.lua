@@ -64,6 +64,10 @@ map("n", "<leader>h", function()
     require("nvchad.term").new { pos = "sp" }
 end, { desc = "terminal new horizontal term" })
 
+map("n", "<leader>v", function()
+    require("nvchad.term").new { pos = "vsp" }
+end, { desc = "terminal new vertical term" })
+
 -- whichkey
 map("n", "<leader>wK", "<cmd>WhichKey <CR>", { desc = "whichkey all keymaps" })
 
